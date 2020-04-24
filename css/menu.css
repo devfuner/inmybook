@@ -1,0 +1,37 @@
+.menu-list {
+    display: flex;
+    flex-direction: column;
+}
+.menu-item {
+    background-color: gold;
+}
+.menu-item:hover {
+    background-color: crimson;
+}
+.menu-link {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555555;
+    padding: 1em;
+    text-align: center;
+}
+.menu-link:hover {
+    color: #ffffff;
+}
+
+@media (min-width: 600px) {
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-item {
+        flex-grow: 1;
+        background-color: gold;
+        transition: 0.5s;
+    }
+    .menu-item:hover {
+        flex-grow: 1.2;
+        background-color: crimson;
+    }
+}

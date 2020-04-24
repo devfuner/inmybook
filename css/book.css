@@ -1,0 +1,39 @@
+.book-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.book-image {
+    height: 0;
+    padding-bottom: 100%;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.book-image img {
+    display: none;
+}
+.book-desc {
+    flex: 1 1 auto;
+    padding: 1em;
+    background: white;
+}
+
+@media (min-width: 600px) {
+    .book-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+    .book-item {
+        width: 33.33333%;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .book-item {
+        width: 20%;
+    }
+}

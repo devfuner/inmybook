@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    padding: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+    }
+}

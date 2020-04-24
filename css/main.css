@@ -1,0 +1,24 @@
+@import "default.css";
+@import "logo.css";
+@import "menu.css";
+@import "search.css";
+@import "book.css";
+@import "header.css";
+@import "footer.css";
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    flex: 1 auto;
+}
+.books-container {
+    padding: 1rem;
+}
+.about-container {
+    display: none;
+    padding: 1rem;
+}

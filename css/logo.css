@@ -1,0 +1,12 @@
+.logo {
+    margin: 10px auto;
+    width: 150px;
+    height: 50px;
+    background: url('../images/inmybook_logo.svg') no-repeat 0 0;
+}
+
+@media (min-width: 600px) {
+    .logo {
+        margin: 0.8rem 0px 0px 1rem;
+    }
+}
