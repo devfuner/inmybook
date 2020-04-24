@@ -26,9 +26,10 @@ const bookTemplate = (obj) => {
 };
 
 const clearInnerHTML = (ele) => ele.innerHTML = '';
+const setInnerHTML = (ele, innerHTML) => ele.innerHTML = innerHTML;
 
 const bookList = document.querySelector('.book-list');
 clearInnerHTML(bookList);
 
 const bookHtml = bookDatas.map(bookTemplate).join('');
-bookList.innerHTML = bookHtml;
+setInnerHTML(bookList, bookHtml);
