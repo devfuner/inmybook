@@ -1,0 +1,229 @@
+html {
+	font-family: 'Apple SD Gothic Neo', Roboto, 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
+	color: #555;
+	line-height: 1.2;
+	word-wrap: break-word;
+}
+body {
+	background: #eee;
+	-webkit-font-smoothing: antialiased;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+div, span, article, section, header, footer, aside, p, ul, li, fieldset, legend, label, a, nav, form {
+	box-sizing: border-box;
+	/* content-box */
+}
+ol, ul, li {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+a {
+	display: inline-block;
+}
+button {
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+.flex-container {
+	/* padding: 10px; */
+	background: lightgray;
+}
+.flex-item {
+	padding: 10px;
+	border: 3px solid rgb(50,50,40);
+	color: white;
+	background: mediumseagreen;
+}
+
+.logo {
+    margin: 10px auto;
+    width: 150px;
+    height: 50px;
+    background: url(69040b4417c178d43a07f0b50dfc3748.svg) no-repeat 0 0;
+}
+
+@media (min-width: 600px) {
+    .logo {
+        margin: 0.8rem 0px 0px 1rem;
+    }
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+}
+.menu-item {
+    background-color: gold;
+}
+.menu-item:hover {
+    background-color: crimson;
+}
+.menu-link {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555555;
+    padding: 1em;
+    text-align: center;
+}
+.menu-link:hover {
+    color: #ffffff;
+}
+
+@media (min-width: 600px) {
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-item {
+        flex-grow: 1;
+        background-color: gold;
+        transition: 0.5s;
+    }
+    .menu-item:hover {
+        flex-grow: 1.2;
+        background-color: crimson;
+    }
+}
+.search-form {
+    display: flex;
+    height: 40px;
+}
+.search-form input[type=search] {
+    flex-grow: 1;
+    min-width: 0;
+    margin-right: 10px;
+    border: 0;
+    border-radius: 0.5em;
+    font-size: 1rem;
+
+}
+.search-form input[type=submit] {
+    width: 4em;
+    border: 0;
+    border-radius: 0.5em;
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+    .search-form {
+        width: 300px;
+        margin-left: auto;
+    }
+    .search-form input[type=search] {
+        flex-grow: 1;
+        min-width: 50px;
+        margin-right: 10px;
+        border: 0;
+        border-radius: 0.5em;
+        font-size: 1rem;
+
+    }
+    .search-form input[type=submit] {
+        width: 3rem;
+        border: solid #eeeeee 1px;
+    }
+}
+.book-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.book-image {
+    height: 0;
+    padding-bottom: 100%;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.book-image img {
+    display: none;
+}
+.book-desc {
+    flex: 1 1 auto;
+    padding: 1em;
+    background: white;
+}
+
+@media (min-width: 600px) {
+    .book-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+    .book-item {
+        width: 33.33333%;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .book-item {
+        width: 20%;
+    }
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    padding: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.footer {
+    width: 100%;
+    background-color: gold;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    flex: 1 auto;
+}
+.books-container {
+    padding: 1rem;
+}
+.about-container {
+    display: none;
+    padding: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map*/
