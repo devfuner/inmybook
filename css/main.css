@@ -4,6 +4,7 @@
 @import "search.css";
 @import "book.css";
 @import "about.css";
+@import "devfuner.css";
 @import "header.css";
 @import "footer.css";
 
@@ -15,11 +16,13 @@ body {
 
 .container {
     flex: 1 auto;
+    padding: 1rem;
 }
 .books-container {
-    padding: 1rem;
 }
 .about-container {
     display: none;
-    padding: 1rem;
+}
+.devfuner-container {
+    display: none;
 }

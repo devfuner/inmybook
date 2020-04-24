@@ -1,0 +1,20 @@
+.devfuner-container {
+
+}
+.sub-title {
+    margin: 0.5rem;
+}
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.skill-item {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 30%;
+    border-radius: 0.3rem;
+    background-color: lightblue;
+    background-clip: padding-box;
+}
